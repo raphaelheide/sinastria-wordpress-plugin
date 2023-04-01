@@ -3,7 +3,7 @@ Contributors: Raphael Heide
 Donate link: https://raphaelheide.com
 Tags: horóscopo, amor, compatibilidade, zodiaco
 Requires at least: 2.7.0
-Tested up to: 6.0
+Tested up to: 6.1
 Stable tag: trunk 
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -29,6 +29,8 @@ Este plugin gera o resultado da Sinastria do Amor (compatibilidade do amor pelo 
 
 == Changelog ==
 
+= 1.1.2 =
+* Update to PHP 8.0
 
 = 1.0 =
 * First stable version.

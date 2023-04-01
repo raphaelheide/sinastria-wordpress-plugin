@@ -4,7 +4,7 @@
 Plugin Name: Meu Astro Sinastria
 Plugin URI: 
 Description: Sinastria do Amor - Zodíaco
-Version: 1.1
+Version: 1.1.2
 Author: Raphael Heide
 License: GPL2
 Copyright 2020 Raphael Heide (email : contato@agenciadesigno.com)
@@ -80,7 +80,9 @@ $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($titl
 	}
 }
 
+// STOPS on 8.0
+// add_action( 'widgets_init', create_function('', 'return register_widget("sinastriaWidget");') );
 
-add_action( 'widgets_init', create_function('', 'return register_widget("sinastriaWidget");') );
+add_action( 'widgets_init', function() { return register_widget("sinastriaWidget"); } );
 
 ?>
